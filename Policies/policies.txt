@@ -1,0 +1,12 @@
+; ----------------------------------------------------------------------
+; CUSTOM POLICY
+
+User
+Software\Microsoft\Windows\CurrentVersion\Policies\System
+Wallpaper
+SZ:c:\\test.bmp
+
+User
+Software\Microsoft\Windows\CurrentVersion\Policies\System
+WallpaperStyle
+SZ:0
