@@ -6,12 +6,12 @@
 Computer
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
 Bias
-DWORD:fffffe7a
+DWORD:0xfffffe7a
 
 Computer
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
 DaylightBias
-DWORD:00000000
+DWORD:0x00000000
 
 Computer
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
@@ -26,7 +26,7 @@ BINARY:00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
 Computer
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
 StandardBias
-DWORD:00000000
+DWORD:0x00000000
 
 Computer
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
@@ -46,14 +46,14 @@ SZ:Myanmar Standard Time
 Computer
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
 DynamicDaylightTimeDisabled
-DWORD:00000000
+DWORD:0x00000000
 
 Computer
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
 ActiveTimeBias
-DWORD:00000000
+DWORD:0x00000000
 
 Computer
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
 RealTimeIsUniversal
-DWORD:00000001
+DWORD:0x00000001

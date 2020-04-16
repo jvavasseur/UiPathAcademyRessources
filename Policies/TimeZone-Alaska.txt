@@ -6,12 +6,12 @@
 Computer
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
 Bias
-DWORD:0000021c
+DWORD:0x0000021c
 
 Computer
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
 DaylightBias
-DWORD:ffffffc4
+DWORD:0xffffffc4
 
 Computer
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
@@ -26,7 +26,7 @@ BINARY:00,00,03,00,02,00,02,00,00,00,00,00,00,00,00,00
 Computer
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
 StandardBias
-DWORD:00000000
+DWORD:0x00000000
 
 Computer
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
@@ -46,14 +46,14 @@ SZ:Alaskan Standard Time
 Computer
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
 DynamicDaylightTimeDisabled
-DWORD:00000000
+DWORD:0x00000000
 
 Computer
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
 ActiveTimeBias
-DWORD:00000000
+DWORD:0x00000000
 
 Computer
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
 RealTimeIsUniversal
-DWORD:00000001
+DWORD:0x00000001
