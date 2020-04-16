@@ -1,0 +1,59 @@
+; ----------------------------------------------------------------------
+; Wednesday 04/15/2020 15:20:31
+; POLICY
+; Set TimeZone to Myanmar
+
+Computer
+SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+Bias
+DWORD:0000021c
+
+Computer
+SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+DaylightBias
+DWORD:ffffffc4
+
+Computer
+SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+DaylightName
+SZ:@tzres.dll,-301
+
+Computer
+SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+DaylightStart
+BINARY:00,00,03,00,05,00,02,00,00,00,00,00,00,00,00,00
+
+Computer
+SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+StandardBias
+DWORD:00000000
+
+Computer
+SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+StandardName
+SZ:@tzres.dll,-302
+
+Computer
+SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+StandardStart
+BINARY:00,00,0a,00,05,00,03,00,00,00,00,00,00,00,00,00
+
+Computer
+SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+TimeZoneKeyName
+SZ:Romance Standard Time
+
+Computer
+SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+DynamicDaylightTimeDisabled
+DWORD:00000000
+
+Computer
+SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+ActiveTimeBias
+DWORD:00000000
+
+Computer
+SYSTEM\CurrentControlSet\Control\TimeZoneInformation
+RealTimeIsUniversal
+DWORD:00000001
