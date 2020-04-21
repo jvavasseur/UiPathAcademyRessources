@@ -15,7 +15,6 @@
     </Product>
     <Product ID="LanguagePack">
       <Language ID="en-us" />
-      <Language ID="fr-fr" />
       <ExcludeApp ID="Access" />
       <ExcludeApp ID="Groove" />
       <ExcludeApp ID="Lync" />
