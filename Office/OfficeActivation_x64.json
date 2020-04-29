@@ -1,0 +1,24 @@
+{
+    "downloads":[
+        {
+            "name":"Office_x64_Activate.ps1",
+            "path":"",
+            "url":"https://github.com/jvavasseur/UiPathAcademyRessources/raw/master/Office/Office_x64_Activate.ps1",
+            "replace":true,
+            "extract":false
+        },
+        {
+            "name":"Office_x64_AddLicence.ps1",
+            "path":"",
+            "url":"https://github.com/jvavasseur/UiPathAcademyRessources/raw/master/Office/Office_x64_AddLicence.ps1",
+            "replace":true,
+            "extract":false
+        },
+        {
+            "name":"Office_x64_RemoveLicence.ps1",
+            "path":"",
+            "url":"https://github.com/jvavasseur/UiPathAcademyRessources/raw/master/Office/Office_x64_RemoveLicence.ps1",
+            "replace":true,
+            "extract":false
+        }
+}
