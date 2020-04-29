@@ -1,0 +1,6 @@
+{
+    "downloads": [
+        { "name": "DoubleUi.exe", path: "%ALLUSERSPROFILE%\Desktop", url: "https://github.com/jvavasseur/UiPathAcademyRessources/raw/master/Downloads/DoubleUI.exe", "replace": true, "extract": false }
+        , { "name": "wallpaper.jpg", path: "", url: "https://github.com/jvavasseur/UiPathAcademyRessources/raw/master/Downloads/maxresdefault.jpg", "replace": true, "extract": false }
+	]
+}
