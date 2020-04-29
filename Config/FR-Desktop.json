@@ -19,7 +19,7 @@
         {
             "name":"Challenge RPA.url",
             "path":"%ALLUSERSPROFILE%\\Desktop",
-            "url":"http://rpachallenge.com/"
+            "url":"http://rpachallenge.com"
         }
     ],
     "shortcuts":[
@@ -30,3 +30,4 @@
         }
     ]
 }
+
