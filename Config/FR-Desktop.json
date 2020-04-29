@@ -1,6 +1,25 @@
 {
-    "downloads": [
-        { "name": "DoubleUi.exe", path: "%ALLUSERSPROFILE%\Desktop", url: "https://github.com/jvavasseur/UiPathAcademyRessources/raw/master/Downloads/DoubleUI.exe", "replace": true, "extract": false }
-        , { "name": "wallpaper.jpg", path: "", url: "https://github.com/jvavasseur/UiPathAcademyRessources/raw/master/Downloads/maxresdefault.jpg", "replace": true, "extract": false }
-	]
+    "downloads":[
+        {
+            "name":"DoubleUi.exe",
+            "path":"%ALLUSERSPROFILE%\\Desktop",
+            "url":"https://github.com/jvavasseur/UiPathAcademyRessources/raw/master/Downloads/DoubleUI.exe",
+            "replace":true,
+            "extract":false
+        },
+        {
+            "name":"wallpaper.png",
+            "path":"",
+            "url":"https://github.com/jvavasseur/UiPathAcademyRessources/raw/master/Downloads/UiPathAcademyLiveFond Ecran.png",
+            "replace":true,
+            "extract":false
+        }
+    ],
+    "favorites":[
+        {
+            "name":"Challenge RPA.url",
+            "path":"%ALLUSERSPROFILE%\\Desktop",
+            "url":"http://rpachallenge.com/"
+        }
+    ]
 }
