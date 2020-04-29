@@ -2,7 +2,7 @@
     "downloads":[
         {
             "name":"DoubleUi.exe",
-            "path":"%ALLUSERSPROFILE%\\Desktop",
+            "path":"",
             "url":"https://github.com/jvavasseur/UiPathAcademyRessources/raw/master/Downloads/DoubleUI.exe",
             "replace":true,
             "extract":false
@@ -20,6 +20,13 @@
             "name":"Challenge RPA.url",
             "path":"%ALLUSERSPROFILE%\\Desktop",
             "url":"http://rpachallenge.com/"
+        }
+    ],
+    "shortcuts":[
+        {
+            "name":"Start DoubleUi.lnk",
+            "path":"%ALLUSERSPROFILE%\\Desktop",
+            "target":"%PROGRAMDATA%\\UiPath\Academy\\Downloads\DoubleUi.exe"
         }
     ]
 }
