@@ -26,7 +26,7 @@
         {
             "name":"Start DoubleUi.lnk",
             "path":"%ALLUSERSPROFILE%\\Desktop",
-            "target":"%PROGRAMDATA%\\UiPath\Academy\\Downloads\DoubleUi.exe"
+            "target":"%PROGRAMDATA%\\UiPath\\Academy\\Downloads\\DoubleUi.exe"
         }
     ]
 }
