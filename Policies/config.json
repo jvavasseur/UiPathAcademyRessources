@@ -1,0 +1,239 @@
+<powershell>
+
+ $json = '
+{
+    "favorites":[
+        {
+            "name":"Challenge RPA.url",
+            "path":"%ALLUSERSPROFILE%\\Desktop",
+            "url":"http://rpachallenge.com"
+        }
+    ],
+    "shortcuts":[
+        {
+            "name":"UiPath Studio.lnk",
+            "path":"%ALLUSERSPROFILE%\\Desktop",
+            "target":"C:\\Users\\Administrator\\AppData\\Local\\UiPath\\UiPath.Studio.exe"
+        },
+        {
+            "name":"Start DoubleUi.lnk",
+            "path":"%ALLUSERSPROFILE%\\Desktop",
+            "target":"%PROGRAMDATA%\\UiPath\\Academy\\Downloads\\DoubleUi.exe"
+        }
+    ],
+    "policies":[
+        {
+            "name":"computer settings",
+            "configuration":"computer",
+            "rules":[
+                {
+                    "key":"Software\\Policies\\Microsoft\\Internet Explorer\\Main",
+                    "values":[
+                        {
+                            "value":"Isolation64Bit",
+                            "action":"DWORD:1"
+                        },
+                        {
+                            "value":"Isolation",
+                            "action":"SZ:PMIL"
+                        },
+                        {
+                            "value":"DoNotTrack",
+                            "action":"DWORD:0"
+                        },
+                        {
+                            "value":"Enable Browser Extensions",
+                            "action":"SZ:no"
+                        },
+                        {
+                            "value":"NoUpdateCheck",
+                            "action":"DWORD:1"
+                        },
+                        {
+                            "value":"DisableFirstRunCustomize",
+                            "action":"DWORD:1"
+                        }
+                    ]
+                },
+                {
+                    "key":"Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings",
+                    "values":[
+                        {
+                            "value":"Security_HKLM_only",
+                            "action":"DWORD:0"
+                        },
+                        {
+                            "value":"WarnOnBadCertRecving",
+                            "action":"DELETE"
+                        }
+                    ]
+                },
+                {
+                    "key":"Software\\Policies\\Microsoft\\Internet Explorer\\Infodelivery\\Restrictions",
+                    "values":[
+                        {
+                            "value":"NoUpdateCheck",
+                            "action":"DWORD:1"
+                        }
+                    ]
+                },
+                {
+                    "key":"Software\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+                    "values":[
+                        {
+                            "value":"fNoRemoteDesktopWallpaper",
+                            "action":"DWORD:0"
+                        }
+                    ]
+                },
+                {
+                    "key":"Software\\Policies\\Microsoft\\Internet Explorer\\Security",
+                    "values":[
+                        {
+                            "value":"DisableSecuritySettingsCheck",
+                            "action":"DWORD:1"
+                        }
+                    ]
+                },
+                {
+                    "key":"Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings",
+                    "values":[
+                        {
+                            "value":"WarnOnIntranet",
+                            "action":"DWORD:0"
+                        },
+                        {
+                            "value":"WarnOnZoneCrossing",
+                            "action":"DWORD:0"
+                        }
+                    ]
+                },
+                {
+                    "key":"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings",
+                    "values":[
+                        {
+                            "value":"WarnOnZoneCrossing",
+                            "action":"DWORD:0"
+                        }
+                    ]
+                },
+                {
+                    "key":"SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}",
+                    "values":[
+                        {
+                            "value":"IsInstalled",
+                            "action":"DWORD:0"
+                        }
+                    ]
+                },
+                {
+                    "key":"SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A8-37EF-4b3f-8CFC-4F3A7470407}",
+                    "values":[
+                        {
+                            "value":"IsInstalled",
+                            "action":"DWORD:0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name":"user settings",
+            "configuration":"user",
+            "rules":[
+                {
+                    "key":"Software\\Policies\\Microsoft\\Internet Explorer\\Control Panel",
+                    "values":[
+                        {
+                            "value":"HomePage",
+                            "action":"DWORD:1"
+                        }
+                    ]
+                },
+                {
+                    "key":"Software\\Policies\\Microsoft\\Internet Explorer\\Main",
+                    "values":[
+                        {
+                            "value":"Isolation",
+                            "action":"SZ:PMIL"
+                        },
+                        {
+                            "value":"Isolation64Bit",
+                            "action":"DWORD:1"
+                        },
+                        {
+                            "value":"Start Page",
+                            "action":"SZ:https://google.com/webhp?hl=en"
+                        }
+                    ]
+                },
+                {
+                    "key":"SOFTWARE\\Microsoft\\Internet Explorer\\Main",
+                    "values":[
+                        {
+                            "value":"Start Page",
+                            "action":"SZ:https://google.com/webhp?hl=fr"
+                        },
+                        {
+                            "value":"First Home Page",
+                            "action":"SZ:https://google.com/webhp?hl=fr"
+                        },
+                        {
+                            "value":"First Home Page",
+                            "action":"SZ:https://google.com/webhp?hl=fr"
+                        }
+                    ]
+                },
+                {
+                    "key":"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings",
+                    "values":[
+                        {
+                            "value":"WarnOnIntranet",
+                            "action":"DWORD:0"
+                        },
+                        {
+                            "value":"WarnOnZoneCrossing",
+                            "action":"DWORD:0"
+                        }
+                    ]
+                },
+                {
+                    "key":"Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+                    "values":[
+                        {
+                            "value":"Wallpaper",
+                            "action":"SZ:C:\\ProgramData\\UiPath\\Academy\\Downloads\\wallpaper.jpg"
+                        },
+                        {
+                            "value":"WallpaperStyle",
+                            "action":"DWORD:0"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+'
+
+$params = @{
+	Urls = @("https://github.com/jvavasseur/UiPathAcademyRessources/raw/master/Config/FR-Desktop.json"
+		, "https://github.com/jvavasseur/UiPathAcademyRessources/raw/master/Office/OfficeActivation_x64.json")
+	WorkingDirectory = "%programdata%\uipath\academy"
+    Json = $json
+    PullOrigin = $true
+}            
+
+CD "C:\ProgramData\UiPath\Academy\VmReconfig"
+
+& 'C:\Program Files\Git\bin\git.exe' pull origin
+ 		
+C:\ProgramData\UiPath\Academy\VmReconfig\Set-VmConfig.ps1 @params >c:\debug.txt
+
+C:\ProgramData\UiPath\Academy\Downloads\Office_x64_Activate.ps1 -data "WFFOVkstOEpZREItV0o5VzMtWUo4WVItV0ZHOTk="
+
+Set-TimeZone -Id "Romance Standard Time" -PassThru 
+
+
+</powershell>
+<persist>true</persist>

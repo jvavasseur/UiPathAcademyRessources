@@ -1,0 +1,77 @@
+; ----------------------------------------------------------------------
+; PARSING Computer POLICY
+; Source file:  C:\Windows\System32\GroupPolicy\Machine\Registry.pol
+
+;COMPUTER CONFIGURATION > POLICIES > ADMNISTRATIVE TEMPLATES > WINDOWS COMPONENTS > INTERNET EXPLORER > INTERNET CONTROL PANEL > ADVANCED PAGE > ENHANCED PROTECTED MODE = DISABLED
+Computer
+Software\Policies\Microsoft\Internet Explorer\Main
+Isolation
+SZ:PMIL
+
+;COMPUTER CONFIGURATION > POLICIES > ADMNISTRATIVE TEMPLATES > WINDOWS COMPONENTS > INTERNET EXPLORER > INTERNET CONTROL PANEL > ADVANCED PAGE > Always send Do Not Track header = DISABLED
+Computer
+Software\Policies\Microsoft\Internet Explorer\Main
+DoNotTrack
+DWORD:0
+
+;COMPUTER CONFIGURATION > POLICIES > ADMNISTRATIVE TEMPLATES > WINDOWS COMPONENTS > INTERNET EXPLORER > INTERNET CONTROL PANEL > ADVANCED PAGE > Allow third-party browser extensions = DISABLED
+Computer
+Software\Policies\Microsoft\Internet Explorer\Main
+Enable Browser Extensions
+SZ:no
+
+;COMPUTER CONFIGURATION > POLICIES > ADMNISTRATIVE TEMPLATES > WINDOWS COMPONENTS > INTERNET EXPLORER > INTERNET CONTROL PANEL > ADVANCED PAGE > Automatically check for Internet Explorer updates = DISABLED
+Computer
+Software\Policies\Microsoft\Internet Explorer\Main
+NoUpdateCheck
+DWORD:1
+
+;COMPUTER CONFIGURATION > POLICIES > ADMNISTRATIVE TEMPLATES > WINDOWS COMPONENTS > INTERNET EXPLORER > Security Zones: Use only machine settings = ENABLED
+Computer
+Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings
+Security_HKLM_only
+DWORD:1
+
+;COMPUTER CONFIGURATION > POLICIES > ADMNISTRATIVE TEMPLATES > WINDOWS COMPONENTS > INTERNET EXPLORER > Prevent running First Run wizard = ENABLED
+Computer
+Software\Policies\Microsoft\Internet Explorer\Main
+DisableFirstRunCustomize
+DWORD:1
+
+;COMPUTER CONFIGURATION > POLICIES > ADMNISTRATIVE TEMPLATES > WINDOWS COMPONENTS > INTERNET EXPLORER > Disable Periodic Check for Internet Explorer software updates = ENABLED
+Computer
+Software\Policies\Microsoft\Internet Explorer\Infodelivery\Restrictions
+NoUpdateCheck
+DWORD:1
+
+;COMPUTER CONFIGURATION > POLICIES > ADMNISTRATIVE TEMPLATES > WINDOWS COMPONENTS > INTERNET EXPLORER > Turn off the Security Settings Check feature = ENABLED
+Computer
+Software\Policies\Microsoft\Internet Explorer\Security
+DisableSecuritySettingsCheck
+DWORD:1
+
+;COMPUTER CONFIGURATION > POLICIES > ADMNISTRATIVE TEMPLATES > WINDOWS COMPONENTS > INTERNET EXPLORER > Turn off the auto-complete feature for web addresses = DISABLED
+Computer
+Software\Policies\Microsoft\Windows\CurrentVersion\Explorer\AutoComplete
+AutoSuggest
+SZ:yes
+
+;Remove Skype for Business Browser Helper
+Computer
+HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer\Browser Helper Objects
+*
+DELETEALLVALUES
+
+;COMPUTER CONFIGURATION > POLICIES > ADMNISTRATIVE TEMPLATES > WINDOWS COMPONENTS > INTERNET EXPLORER > Prevent changing the default search provider = ENABLED
+;COMPUTER CONFIGURATION > POLICIES > ADMNISTRATIVE TEMPLATES > WINDOWS COMPONENTS > INTERNET EXPLORER >  Soecify default behavior for a new tab = ENABLED
+;COMPUTER CONFIGURATION > POLICIES > ADMNISTRATIVE TEMPLATES > WINDOWS COMPONENTS > INTERNET EXPLORER >  Prevent managing SmartScreen Filter = ENABLED
+
+;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings
+;WarnOnIntranet
+;REG_DWORD
+;0
+
+;WarnonZoneCrossing
+;REG_DWORD
+;0
+;0 = ZERO = DO NOT SHOW WARNING
